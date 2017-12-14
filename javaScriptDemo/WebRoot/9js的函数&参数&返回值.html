@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<!-- 普通函数 -->
+<!-- <script type="text/javascript">
+	/* 定义函数 */
+	function test(str){
+		alert(str);
+	}
+	/* 函数的调用 */
+	test("java");
+</script> -->
+
+<!-- 匿名函数 -->
+<!-- <script type="text/javascript">
+	/* 定义函数 */
+	var a = function (str){
+		alert(str);
+	}
+	/* 函数的调用 */
+	a("java");
+</script> -->
+
+<!-- 对象函数 -->
+<!-- <script type="text/javascript">
+	/* 定义函数 */
+	var a = new Function("str","alert(str)");
+	/* 函数的调用 */
+	a("java");
+</script> -->
+<!-- 参数 -->
+<!-- <script type="text/javascript">
+	function method(a,b){
+		alert(a+b);
+		/* 想要使用第三种情况获取所有值，可以这样写 */
+		for(var i=0;i<arguments.length;i++){
+			alert(arguments[i]);
+		}
+	}
+	/* 第一种情况 */
+	method(2,4);//6/正常结果
+	/* 第二种情况 */
+	method(2);//NaN：not a number不是一个数字(2和undefied相加)
+	/* 第三种情况 */
+	method(2,4,8);//6/8会自动舍去
+	
+</script> -->
+<!-- 返回值 -->
+<script type="text/javascript">
+	function method(a,b){
+		return a+b;
+	}
+	var num = method(2,4);
+	alert(num);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

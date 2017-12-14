@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<body>
+	第二页
+	<a href="BOM5.html">next</a>
+	<br/>
+	<input id="pre" type="button" value="上一页"/>
+	<input id="nex" type="button" value="下一页"/>
+</body>
+
+<script type="text/javascript">
+
+	document.getElementById("pre").onclick = function(){
+		//history.back();
+		history.go(-1);
+	};
+	document.getElementById("nex").onclick = function(){
+		//history.forward();
+// 		history.go(1);
+	};
+
+</script>
+</html>

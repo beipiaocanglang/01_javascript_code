@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+		<!-- <script type="text/javascript">
+			var array = [1,2,3,5];
+			/* 可以给指定索引位置赋值 */
+			array[1] = "java";
+			
+			/* 
+			java中如果超过数组本身长度，会报索引越界，
+			但是在js中不会，他会把中间没有的用undefined部填充表示 
+			*/
+			array[5] = "php";
+			
+			for(var i=0;i<array.length;i++){
+				alert(array[i]);
+			}
+			
+		</script> -->
+		<script type="text/javascript">
+			var array = [1,2,3,5,"java"];
+			alert(array.join("-"));//"1-2-3-5-java"
+			alert(array.pop("-"));//删除最后一个元素，并把删除的元素返回
+			alert(array.reverse());//颠倒顺序
+			alert(array.sort());//按字典顺序排序
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

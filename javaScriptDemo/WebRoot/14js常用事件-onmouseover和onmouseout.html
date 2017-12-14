@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				text-align: center;
+			}
+			div font{
+				color: #fff;
+				text-align: center;
+				padding-top: 
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div">
+			<font class="font"> 我是红色div</font>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var div = document.getElementById("div");
+		div.onmouseover = function(){
+			this.style.backgroundColor = "green";
+		};
+		div.onmouseout = function(){
+			this.style.backgroundColor = "red";
+		};
+		
+	</script>
+	
+</html>

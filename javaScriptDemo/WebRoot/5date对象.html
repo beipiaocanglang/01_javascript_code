@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+		
+		<script type="text/javascript">
+			
+			var date = new Date();
+			alert(date.toString());//中国标准时间(看不懂)
+			alert(date.toLocaleString());//本地格式的时间
+			alert("年："+date.getFullYear()+"  月："+(date.getMonth()+1)+"日："+date.getDate()+	" 星期："+date.getDay());
+			var time = date.getTime();//从1970、1、1开始到现在的毫秒值
+			alert(time);
+			
+		</script>
+		
+	</head>
+	<body>
+	
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<!-- 方法一 -->
+		<!-- <a href="http://www.baidu.com" onclick="prevent(event)">跳转</a> -->
+		<!-- 方法二 -->
+		<a href="http://www.baidu.com" onclick="return false">跳转</a>
+	</body>
+	<script type="text/javascript">
+		function prevent(e){
+			//是火狐
+			if(e && e.preventDefault){
+				alert("w3c");
+				e.preventDefault();
+			}else{
+			//IE
+				alert("IE");
+				window.event.returnDefault = false;
+			}
+		
+		}
+	</script>
+</html>

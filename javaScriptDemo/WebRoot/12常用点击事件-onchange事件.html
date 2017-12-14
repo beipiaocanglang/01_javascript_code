@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<select id="city">
+			<option value="bj">北京</option>
+			<option value="tj">天津</option>
+			<option value="sh">上海</option>
+		</select>
+		<select id="area">
+			<option>海淀区</option>
+			<option>昌平区</option>
+			<option>朝阳区</option>
+		</select>
+	</body>
+	
+	<script type="text/javascript">
+		var city = document.getElementById("city");
+	
+		/* 添加改变事件 */
+		city.onchange = function() {
+			var options = city.getElementsByTagName("option");
+			for ( var i = 0; i < options.length; i++) {
+				var option = options[i];
+				if (option.selected) {
+					var value = option.value;
+					/* 判断是那一个城市 */
+					switch (value) {
+					case "bj":
+						/* 获取对应区域的信息 */
+						var area = document.getElementById("area");
+						area.innerHTML = "<option>海淀区</option><option>昌平区</option><option>朝阳区</option>";
+						break;
+					case "tj":
+						var area = document.getElementById("area");
+						area.innerHTML = "<option>南开区</option><option>西青区</option><option>河西区</option>";
+						break;
+					case "sh":
+						var area = document.getElementById("area");
+						area.innerHTML = "<option>浦东新区</option><option>虹桥区</option><option>闵行区</option>";
+						break;
+					}
+				}
+			}
+		}
+	</script>
+</html>

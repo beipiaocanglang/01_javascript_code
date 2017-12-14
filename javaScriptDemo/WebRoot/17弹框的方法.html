@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+	<!-- 	<script type="text/javascript">
+			/* 第一种 */
+			alert("xxxx");
+			/* 第二种 */
+			var con = confirm("您确定删除这条信息吗？");
+			if(con){
+				alert("删除成功");
+			} 
+			/* 第三种 */
+			var pro = prompt("请输入密码");
+			if(pro != null){
+				alert("登录成功");
+			}
+		</script>	 -->
+		
+		<!-- <script type="text/javascript">
+			/* open方法的使用 */
+			open("http://www.baidu.com");
+		</script>	 -->
+		
+		<!-- <script type="text/javascript">
+			/* 第一种定时器 */
+			setTimeout(function(){
+				/* 三秒钟后打开指定网页 */
+				open("http://www.baidu.com");
+			},3000);
+		</script>	 -->
+		<!-- <script type="text/javascript">
+			/* 第二种定时器 (为了能够手动关闭可以给他一个返回值)*/
+			var timer = setInterval(function(){
+				/* 三秒钟后打开指定网页 */
+				open("http://www.baidu.com");
+			},3000);
+			function closer(){
+				clearInterval(timer);
+			}
+		</script>	 -->
+		
+		<script type="text/javascript">
+			/* location对象*/
+			location.href="http://www.baidu.com";
+		</script>	
+	</head>
+	<body>
+		<!-- <input type="button" value="close" onclick="closer()"/> -->
+	</body>
+</html>
